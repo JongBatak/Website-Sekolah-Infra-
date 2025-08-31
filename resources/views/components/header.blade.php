@@ -57,7 +57,7 @@
         <!-- muncul saat hover -->
         <div
           class="dropdown-menu absolute left-0 hidden group-hover:block bg-white shadow-lg mt-2 rounded w-56 opacity-0 translate-y-2 transition-all duration-300">
-          <a href="#" class="block px-4 py-2 hover:bg-orange-500 hover:text-white">Sambutan Pembina Yayasan</a>
+          <a href="{{ route('sambutan') }}" class="block px-4 py-2 hover:bg-orange-500 hover:text-white">Sambutan Pembina Yayasan</a>
           <a href="#" class="block px-4 py-2 hover:bg-orange-500 hover:text-white">Partner Industri</a>
         </div>
       </div>

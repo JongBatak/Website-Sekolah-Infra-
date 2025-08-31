@@ -13,7 +13,7 @@
     </div>
     <div class="flex">
       <div class="w-12 h-12 bg-orange-500"></div>
-      <div class="w-12 h-12 bg-gray-100"></div>
+      <div class="w-12 h-12 bg-gray-100"></div> 
     </div>
   </div>
 
