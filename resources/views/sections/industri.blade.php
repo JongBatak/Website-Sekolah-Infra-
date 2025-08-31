@@ -52,7 +52,7 @@
 
         <!-- Lembaga Negara -->
         <div class="flex justify-center">
-          <img src="assets/industri/lemnagara.png" alt="Lembaga Negara" class="h-12 object-contain">
+          <img src="assets/industri/lemnegara.png" alt="Lembaga Negara" class="h-12 object-contain">
         </div>
 
         <!-- WIKA -->

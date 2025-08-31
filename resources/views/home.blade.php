@@ -8,6 +8,7 @@
   @include('sections.prestasi')
   @include('sections.presmalancer')
   @include('sections.kerjasama-ptn')
+  @include('sections.primaboard')
   @include('sections.industri')
   @include('sections.blog')
 @endsection
