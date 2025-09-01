@@ -3,7 +3,7 @@
 
 @section('content')
   <!-- Section Sambutan -->
-  <section class="relative bg-white py-16">
+  <section class="relative bg-white py-16 mt-20">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
       
       <!-- Foto Sambutan -->

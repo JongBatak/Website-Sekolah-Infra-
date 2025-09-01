@@ -1,6 +1,7 @@
 <!-- ================= HEADER (TOPBAR + NAVBAR) ================= -->
 <header id="header"
-  class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+  class="fixed top-0 left-0 w-full z-50 transition-all duration-300 
+  {{ Request::is('/') ? 'bg-transparent' : 'bg-white shadow' }}">
 
   <!-- TOPBAR -->
   <div class="topbar w-full bg-orange-600 text-white text-sm hidden md:flex transition-all duration-300">
@@ -44,11 +45,15 @@
       <!-- Logo -->
       <a href="{{ route('home') }}" class="flex items-center space-x-2">
         <img src="assets/images/logo.webp" alt="Logo" class="h-12">
-        <span class="font-bold text-lg text-white">SMK Prestasi Prima</span>
+        <span class="font-bold text-lg 
+          {{ Request::is('/') ? 'text-white' : 'text-orange-600' }}">
+          SMK Prestasi Prima
+        </span>
       </a>
 
       <!-- Desktop Menu -->
-      <nav class="hidden md:flex space-x-6 font-medium text-white">
+      <nav class="hidden md:flex space-x-6 font-medium 
+        {{ Request::is('/') ? 'text-white' : 'text-orange-600' }}">
         <a href="{{ route('home') }}" class="hover:text-orange-300">Beranda</a>
 
         <!-- Dropdown Tentang -->
