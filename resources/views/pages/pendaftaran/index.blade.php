@@ -16,7 +16,7 @@
           Yuk bergabung bersama kami! Daftarkan dirimu sekarang untuk menjadi bagian dari generasi unggul 
           yang siap menghadapi dunia kerja.
         </p>
-        <a href="#syarat-pendaftaran"
+        <a href="{{ route('pendaftaran.formulir') }}"
            class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded-lg shadow-lg transition text-xs md:text-base">
           Join Now →
         </a>
