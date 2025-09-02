@@ -93,7 +93,7 @@
           </a>
           <div
             class="dropdown-menu absolute left-0 hidden group-hover:block bg-white shadow-lg border border-gray-200 mt-2 rounded-lg w-40 opacity-0 translate-y-2 transition-all duration-300">
-            <a href="#"
+            <a href="{{ route('galeri') }}"
               class="dropdown-link block px-4 py-2 text-gray-800 hover:bg-orange-500 hover:text-white rounded-md">
               Galeri
             </a>
@@ -104,7 +104,7 @@
           </div>
         </div>
 
-        <a href="#" class="hover:text-orange-300">Pendaftaran</a>
+        <a href="{{ route('pendaftaran') }}" class="hover:text-orange-300">Pendaftaran</a>
         <a href="#" class="hover:text-orange-300">PresmaLance</a>
       </nav>
 
@@ -176,26 +176,39 @@
 
   // Scroll effect (topbar + navbar ikut turun)
   const header = document.getElementById("header");
+  const links = header.querySelectorAll("nav a:not(.dropdown-link)");
+  const isHome = "{{ Request::is('/') ? 'true' : 'false' }}" === "true";
+
   window.addEventListener("scroll", () => {
-    const links = header.querySelectorAll("nav a:not(.dropdown-link)");
-    if (window.scrollY > 50) {
-      header.classList.remove("bg-transparent");
-      header.classList.add("bg-white", "shadow");
-      links.forEach(a => {
-        a.classList.remove("text-white");
-        a.classList.add("text-gray-700");
-      });
+    if (isHome) {
+      // === Halaman HOME ===
+      if (window.scrollY > 50) {
+        header.classList.remove("bg-transparent");
+        header.classList.add("bg-white", "shadow");
+        links.forEach(a => {
+          a.classList.remove("text-white");
+          a.classList.add("text-gray-700");
+        });
+      } else {
+        header.classList.add("bg-transparent");
+        header.classList.remove("bg-white", "shadow");
+        links.forEach(a => {
+          a.classList.remove("text-gray-700");
+          a.classList.add("text-white");
+        });
+      }
     } else {
-      header.classList.add("bg-transparent");
-      header.classList.remove("bg-white", "shadow");
-      links.forEach(a => {
-        a.classList.remove("text-gray-700");
-        a.classList.add("text-white");
-      });
+      // === Halaman selain HOME ===
+      if (window.scrollY > 50) {
+        header.classList.add("shadow");
+      } else {
+        header.classList.remove("shadow");
+      }
+      // Link tetap default (tidak diubah ke putih)
     }
   });
 </script>
-  
+
 
 
 
