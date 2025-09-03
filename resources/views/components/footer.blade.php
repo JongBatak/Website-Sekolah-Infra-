@@ -2,29 +2,29 @@
   <div class="container mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
 
     <!-- LOGO & ABOUT -->
-    <div class="text-center md:text-left">
-      <img src="assets/images/logo.webp" alt="Logo" class="mx-auto md:mx-0 w-20 mb-4">
-      <p class="text-sm leading-relaxed">
+    <div class="text-left">
+      <img src="assets/images/logo.webp" alt="Logo" class="w-20 mb-4">
+      <p class="text-sm leading-relaxed max-w-xs">
         SMK Prestasi Prima berkomitmen mencetak generasi berprestasi 
         dengan program pendidikan unggulan dan fasilitas modern.
       </p>
       <!-- Sosial Media -->
-      <div class="flex justify-center md:justify-start gap-4 mt-4">
-        <a href="#" class="hover:text-orange-400 transition">
-          <i class="fab fa-facebook-f text-lg"></i>
+      <div class="flex justify-start gap-3 mt-5">
+        <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white w-9 h-9 flex items-center justify-center rounded-full shadow-md transition">
+          <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="#" class="hover:text-orange-400 transition">
-          <i class="fab fa-instagram text-lg"></i>
+        <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white w-9 h-9 flex items-center justify-center rounded-full shadow-md transition">
+          <i class="fab fa-instagram"></i>
         </a>
-        <a href="#" class="hover:text-orange-400 transition">
-          <i class="fab fa-youtube text-lg"></i>
+        <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white w-9 h-9 flex items-center justify-center rounded-full shadow-md transition">
+          <i class="fab fa-youtube"></i>
         </a>
       </div>
     </div>
 
     <!-- MENU -->
-    <div class="text-center md:text-left">
-      <h2 class="font-bold text-lg mb-3 border-b-2 border-white inline-block">MENU</h2>
+    <div class="text-left">
+      <h2 class="font-bold text-lg mb-3 relative inline-block after:content-[''] after:block after:w-10 after:h-1 after:bg-orange-500 after:mt-1">MENU</h2>
       <ul class="space-y-2 mt-4">
         <li><a href="#" class="hover:text-orange-400 transition">Beranda</a></li>
         <li><a href="#" class="hover:text-orange-400 transition">Tentang</a></li>
@@ -36,25 +36,24 @@
     </div>
 
     <!-- INFORMATION -->
-    <div class="text-center md:text-left">
-      <h2 class="font-bold text-lg mb-3 border-b-2 border-white inline-block">INFORMATION</h2>
+    <div class="text-left">
+      <h2 class="font-bold text-lg mb-3 relative inline-block after:content-[''] after:block after:w-10 after:h-1 after:bg-orange-500 after:mt-1">INFORMATION</h2>
       <div class="mt-4 space-y-4 text-sm">
-        
+
         <!-- Address -->
-        <p class="flex items-start justify-center md:justify-start gap-2">
+        <p class="flex items-start gap-2">
           <i class="fas fa-map-marker-alt text-orange-400 mt-1"></i>
-          Jl. Hankam Raya No. 89, Cilangkap, Cipayung,<br>
-          Jakarta Timur, DKI Jakarta.
+          <span>Jl. Hankam Raya No. 89, Cilangkap, Cipayung,<br>Jakarta Timur, DKI Jakarta.</span>
         </p>
 
         <!-- Phone -->
-        <p class="flex items-center justify-center md:justify-start gap-2">
+        <p class="flex items-center gap-2">
           <i class="fas fa-phone-alt text-orange-400"></i>
           <a href="tel:+6285195928886" class="hover:text-orange-400">+62 851-9592-8886</a>
         </p>
 
         <!-- Email -->
-        <p class="flex items-center justify-center md:justify-start gap-2">
+        <p class="flex items-center gap-2">
           <i class="fas fa-envelope text-orange-400"></i>
           <a href="mailto:ppdb@prestasiprima.sch.id" class="hover:text-orange-400">ppdb@prestasiprima.sch.id</a>
         </p>
@@ -63,9 +62,9 @@
     </div>
 
     <!-- MAP -->
-    <div class="w-full">
-      <h2 class="font-bold text-lg mb-3 border-b-2 border-white inline-block">LOKASI</h2>
-      <div class="aspect-video rounded-lg shadow-md overflow-hidden mt-4">
+    <div class="w-full text-left">
+      <h2 class="font-bold text-lg mb-3 relative inline-block after:content-[''] after:block after:w-10 after:h-1 after:bg-orange-500 after:mt-1">LOKASI</h2>
+      <div class="aspect-video rounded-2xl shadow-lg overflow-hidden mt-4">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4748268020353!2d106.8972187!3d-6.332476499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed2681bc7c67%3A0x777152b1d3f74a62!2sSMK%20Prestasi%20Prima!5e0!3m2!1sid!2sid!4v1756647265168!5m2!1sid!2sid" 
           width="100%" 

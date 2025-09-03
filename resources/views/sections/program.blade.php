@@ -94,7 +94,7 @@
   <div class="max-w-7xl mx-auto px-4 md:px-8">
 
     <!-- Header Atas -->
-    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12" data-aos="fade-up">
       <!-- Judul -->
       <div>
         <h2 class="text-3xl md:text-4xl font-bold text-orange-600 mb-2">
@@ -113,57 +113,70 @@
       </div>
     </div>
 
-    <!-- Grid Card Program -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      
-      <!-- Card 1 -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-        <img src="assets/program/website.jpg" alt="Pengembangan Website" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="font-bold text-lg text-gray-900 mb-2">
-            PENGEMBANGAN <span class="text-orange-600">WEBSITE</span>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Siswa belajar merancang dan mengelola website modern untuk berbagai kebutuhan.
-          </p>
-          <a href="#" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
-            Selengkapnya →
-          </a>
-        </div>
-      </div>
+    <!-- Scrollable Program Cards -->
+    <div class="overflow-x-auto scrollbar-thin scrollbar-thumb-orange-500 scrollbar-track-gray-200">
+      <div class="flex space-x-6 md:grid md:grid-cols-3 md:gap-8">
 
-      <!-- Card 2 -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-        <img src="assets/program/android.jpg" alt="Pengembangan Android" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="font-bold text-lg text-gray-900 mb-2">
-            PENGEMBANGAN <span class="text-orange-600">ANDROID</span>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Pembelajaran difokuskan pada pembuatan aplikasi Android dengan teknologi terkini dan layanan digital.
-          </p>
-          <a href="#" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
-            Selengkapnya →
-          </a>
+        <!-- Card 1 -->
+        <div class="min-w-[280px] bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300" data-aos="zoom-in" data-aos-delay="100">
+          <img src="assets/program/website.jpg" alt="Pengembangan Website" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-lg text-gray-900 mb-2">
+              PENGEMBANGAN <span class="text-orange-600">WEBSITE</span>
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Siswa belajar merancang dan mengelola website modern untuk berbagai kebutuhan.
+            </p>
+            <a href="#" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
+              Selengkapnya →
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Card 3 -->
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-        <img src="assets/program/game.jpg" alt="Pengembangan Gim" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="font-bold text-lg text-gray-900 mb-2">
-            PENGEMBANGAN <span class="text-orange-600">GIM</span>
-          </h3>
-          <p class="text-gray-600 mb-4">
-            Siswa dilatih membuat game kreatif dan interaktif mulai dari konsep, desain, hingga pengembangan.
-          </p>
-          <a href="#" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
-            Selengkapnya →
-          </a>
+        <!-- Card 2 -->
+        <div class="min-w-[280px] bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/program/android.jpg" alt="Pengembangan Android" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-lg text-gray-900 mb-2">
+              PENGEMBANGAN <span class="text-orange-600">ANDROID</span>
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Pembelajaran difokuskan pada pembuatan aplikasi Android dengan teknologi terkini dan layanan digital.
+            </p>
+            <a href="#" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
+              Selengkapnya →
+            </a>
+          </div>
         </div>
-      </div>
 
+        <!-- Card 3 -->
+        <div class="min-w-[280px] bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300" data-aos="zoom-in" data-aos-delay="300">
+          <img src="assets/program/game.jpg" alt="Pengembangan Gim" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-lg text-gray-900 mb-2">
+              PENGEMBANGAN <span class="text-orange-600">GIM</span>
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Siswa dilatih membuat game kreatif dan interaktif mulai dari konsep, desain, hingga pengembangan.
+            </p>
+            <a href="#" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
+              Selengkapnya →
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
+
+<script>
+  AOS.init({
+    duration: 1500,  // durasi animasi
+    once: true      // animasi hanya sekali
+  });
+</script>
+
+<!-- Tailwind Scrollbar Plugin (Tambahkan di tailwind.config.js) -->
+<!-- npm install tailwind-scrollbar -->
+
