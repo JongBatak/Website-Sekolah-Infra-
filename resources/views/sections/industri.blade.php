@@ -55,11 +55,6 @@
           <img src="assets/industri/lemnegara.png" alt="Lembaga Negara" class="h-12 object-contain">
         </div>
 
-        <!-- WIKA -->
-        <div class="flex justify-center">
-          <img src="assets/industri/wika.png" alt="WIKA" class="h-12 object-contain">
-        </div>
-
       </div>
     </div>
 
